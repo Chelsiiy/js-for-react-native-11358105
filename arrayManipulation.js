@@ -11,7 +11,8 @@ function processArray(numbers) {
   const mynumbers = [15, 16, 17, 18, 19];
   const processedNumbers = processArray(mynumbers);
   console.log(processedNumbers); 
-    
+
+const mynames =["Anita","Phoebe","Drake","Lois"]
   function formatArraystrings(strings, numbers){
     if(strings.length !==numbers.length ){
         throw new Error;
