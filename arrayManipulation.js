@@ -11,4 +11,17 @@ function processArray(numbers) {
   const mynumbers = [15, 16, 17, 18, 19];
   const processedNumbers = processArray(mynumbers);
   console.log(processedNumbers); 
-  
+    
+  function formatArraystrings(strings, numbers){
+    if(strings.length !==numbers.length ){
+        throw new Error;
+    }
+    return strings.map((string, index) => {
+        const number = numbers[index];
+        if (number % 2 === 0) {
+          return string.toUpperCase(); 
+        } else {
+          return string.toLowerCase(); 
+        }
+      });
+    }
